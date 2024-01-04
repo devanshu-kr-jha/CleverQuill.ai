@@ -9,6 +9,7 @@ import { db } from '@/lib/db'
 import { eq } from 'drizzle-orm'
 import { $notes } from '@/lib/db/schema'
 import AIChatButton from '@/components/AIChatButton'
+import Image from 'next/image'
 type Props = {}
 
 const DashboardPage =  async (props: Props) => {
@@ -52,7 +53,7 @@ const DashboardPage =  async (props: Props) => {
           {notes.map(note => (
             <a href={`/notebook/${note.id}`} key={note.id}>
               <div className="border border-stone-300 rounded-lg overflow-hidden flex flex-col hover:shadow-xl transition hover:-translate-y-1">
-                <img
+                <Image
                   width={400}
                   height={200}
                   alt={note.name}
