@@ -23,7 +23,7 @@ export default function Home() {
           </p>
           <div className="mt-4"></div>
           <p className="font-workFont text-gray-400 font-semibold text-2xl px-4">
-            Save, develop, and leverage your own thoughts, with the power of GPT
+          Record, improve, and harness your thoughts using our intelligent editor
           </p>
         </div>
         <div className="mt-4"></div>
