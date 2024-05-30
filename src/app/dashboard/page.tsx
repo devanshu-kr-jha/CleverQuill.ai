@@ -18,7 +18,7 @@ const DashboardPage =  async (props: Props) => {
    
   return (
    <>
-   <div className="grainy min-h-screen">
+   <div className="bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-rose-100 to-teal-100 min-h-screen">
       <div className="max-w-7xl mx-auto p-10">
         <div className="h-14"></div>
         <div className="flex justify-between items-center md:flex-row flex-col">

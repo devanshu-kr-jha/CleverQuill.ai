@@ -8,7 +8,10 @@ import NextTopLoader from 'nextjs-toploader'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Aideation',
+  title: 'CleverQuill',
+  icons:{
+    icon: "/feather.png"
+  }
 }
 
 export default function RootLayout({
@@ -17,6 +20,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+    <>
     <ClerkProvider>
     <html lang="en">
       <Provider>
@@ -35,5 +39,6 @@ export default function RootLayout({
       </Provider>
     </html>
     </ClerkProvider>
+    </>
   )
 }

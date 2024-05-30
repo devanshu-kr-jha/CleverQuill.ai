@@ -23,6 +23,10 @@ module.exports = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         landingText: "hsl(342, 87%, 56%)",
+        landingclr1: "#D3F6DB",
+        clr2: "#A1EF8B",
+        clr3: "#92D5E6",
+        clr4: "#6FBE59",
         landingCLR: "hsl(223, 12%, 22%)",
         callToaction: "hsl(336, 85%, 55%)",
         primary: {

@@ -42,6 +42,7 @@ export async function generateImage(image_description: string) {
             n: 1,
             size: '256x256'
         })
+        
         const data = await response.json()
         const image_url = data.data[0].url
         return image_url as string
