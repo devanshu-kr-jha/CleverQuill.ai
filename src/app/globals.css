@@ -74,7 +74,26 @@
   body {
     @apply bg-background text-foreground;
   }
+  
 }
+/* Add your keyframes and animation classes here */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.05); }
+}
+
+@keyframes pulse-slower {
+   0%, 100% { opacity: 0.3; transform: scale(1); }
+   50% { opacity: 0.35; transform: scale(1.03); }
+ }
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+ .animate-pulse-slower {
+   animation: pulse-slower 10s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+ }
 
 
 .grainy {
